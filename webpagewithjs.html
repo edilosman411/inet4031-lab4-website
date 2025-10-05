@@ -1,18 +1,39 @@
 <!DOCTYPE html>
 <html>
-<body>
+  <head>
+    <title>Edil’s Interactive Light Page</title>
+    <style>
+      body {
+        background-color: lavender;   /* change this color to any you like */
+        text-align: center;
+        font-family: Arial, sans-serif;
+      }
+      h1 {
+        color: darkslateblue;
+      }
+      p {
+        font-size: 18px;
+      }
+      button {
+        margin: 10px;
+        padding: 8px 16px;
+        font-size: 16px;
+      }
+    </style>
+  </head>
 
-<h2>Simple Web Page with HTML and JavaScript</h2>
+  <body>
+    <h1>Welcome to Edil’s Light Switch!</h1>
+    <p>Click the buttons below to turn the light on or off and watch what happens.</p>
 
-<p>JavaScript can change HTML attribute values.</p>
+    <img id="myImage" src="pic_bulboff.gif" style="width:120px">
 
-<p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
-
-<button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
-
-<img id="myImage" src="pic_bulboff.gif" style="width:100px">
-
-<button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
-
-</body>
+    <br>
+    <button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">
+      Turn On the Light
+    </button>
+    <button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">
+      Turn Off the Light
+    </button>
+  </body>
 </html>
